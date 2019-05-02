@@ -1,0 +1,9 @@
+CLIENT:
+    • It is a hardware/software that helps in accessing the service provided by the server.
+       
+SERVER:
+    •  A computer or computer program that provides service to the users.
+
+CLIENT-SERVER-MODEL:
+    • The client-server model is an interaction model that helps in client sending request and the server  completing the request by providing the required information using computer programs.
+
