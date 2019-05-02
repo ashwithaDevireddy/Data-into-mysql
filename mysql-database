@@ -1,0 +1,52 @@
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| colleges           |
+| mysql              |
+| naval              |
+| performance_schema |
+| students           |
+| sys                |
+| things             |
++--------------------+
+8 rows in set (0.39 sec)
+
+mysql> use students;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++--------------------+
+| Tables_in_students |
++--------------------+
+| users              |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> desc users;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| KID       | varchar(20) | NO   | PRI | NULL    |       |
+| firstname | varchar(30) | NO   |     | NULL    |       |
+| lastname  | varchar(30) | NO   |     | NULL    |       |
+| password  | varchar(30) | NO   |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.13 sec)
+
+select * from users;
++-----------+-----------+-----------+----------+
+| KID       | firstname | lastname  | password |
++-----------+-----------+-----------+----------+
+| K00442409 | Ashwitha  | Devireddy | 1234     |
+| K00442410 | shirley   | Anusha    | ****     |
+| K00442411 | Harshitha | Behata    | ++++     |
++-----------+-----------+-----------+----------+
+3 rows in set (0.05 sec)
+
+
+
