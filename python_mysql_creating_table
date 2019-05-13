@@ -1,0 +1,6 @@
+import  MySQLdb
+mydb =  MySQLdb.connect(host="localhost", user="root", password="xxxx", database="mydatabase")
+
+mycursor = mydb.cursor()
+
+mycursor.execute("CREATE TABLE Students (FirstName VARCHAR(255), LastName VARCHAR(255), KID VARCHAR(80), Password VARCHAR(90))")

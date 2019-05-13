@@ -1,0 +1,17 @@
+import  MySQLdb
+mydb =  MySQLdb.connect(host="localhost", user="root", password="xxxx", database="mydatabase")
+
+mycursor = mydb.cursor()
+
+sql = "INSERT INTO Students (FirstName, LastName, KID, Password ) VALUES (%s, %s, %s, %s)"
+val = [
+  ('Peter','sam','K00442409','1234'),
+  ('manu','sharma','K00442410','1111'),
+  ('ashwitha','devireddy','K00442416','6666')
+]
+
+mycursor.executemany(sql, val)
+
+mydb.commit()
+
+print(mycursor.rowcount, "was inserted.")
