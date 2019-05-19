@@ -7,7 +7,9 @@ sql = "INSERT INTO Students (FirstName, LastName, KID, Password ) VALUES (%s, %s
 val = [
   ('Peter','sam','K00442409','1234'),
   ('manu','sharma','K00442410','1111'),
-  ('ashwitha','devireddy','K00442416','6666')
+  ('ashwitha','devireddy','K00442416','6666'),
+  ('harshitha','behata','K00441209','4444'),
+  ('shirley','anusha','K00442491','5555')
 ]
 
 mycursor.executemany(sql, val)
